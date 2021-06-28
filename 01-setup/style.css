@@ -1,0 +1,21 @@
+.body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+}
+
+.title {
+  font-size: 60px;
+  color: aqua;
+}
+
+.main {
+  margin: auto;
+  text-align: center;
+}
