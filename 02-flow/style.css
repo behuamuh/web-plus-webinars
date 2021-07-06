@@ -1,0 +1,107 @@
+.block {
+  width: 300px;
+}
+
+.inline {
+  width: 600px;
+  min-height: 200px;
+  margin-right: 40px;
+  margin-top: 200px;
+}
+
+.iwrit {
+  direction: rtl;
+}
+
+.japan {
+  writing-mode: vertical-rl;
+}
+
+.inline {
+  display: inline-block;
+  width: 300px;
+}
+
+.input {
+  border: 1px solid black;
+  display: block;
+}
+
+.box {
+  /* writing-mode: vertical-rl; */
+  box-sizing: border-box;
+  width: 300px;
+  background-color: lawngreen;
+  padding: 30px;
+  border: 10px solid black;
+  /* margin: 50px auto; */
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.flex {
+  display: flex;
+  font-size: 40px;
+  /* justify-content: space-between; */
+  justify-content: center;
+}
+
+.flex-child {
+  /* flex-grow: 1; */
+}
+
+.columns {
+  column-count: 3;
+  column-gap: 32px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+}
+
+.cell {
+  background-color: brown;
+  min-height: 150px;
+  border: 1px solid black;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  background-color: darkblue;
+  border-radius: 50%;
+  position: fixed;
+  /* left: 50px;
+  top: 50px; */
+  bottom: 50px;
+  right: 50px;
+}
+
+.relative {
+  background-color: darkgoldenrod;
+  position: relative;
+}
+
+.relative:hover .absolute {
+  opacity: 1;
+}
+
+.absolute {
+  width: 50px;
+  height: 50px;
+  background-color: darkmagenta;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  opacity: 0;
+}
+.relative-child {
+  background-color: darkorange;
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
