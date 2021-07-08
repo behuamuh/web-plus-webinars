@@ -1,0 +1,17 @@
+.accordition__button {
+  display: flex;
+  border: none;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: transparent;
+  padding: 16px;
+  width: 100%;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.accordition__button:hover {
+  opacity: 0.6;
+}

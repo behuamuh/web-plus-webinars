@@ -3,7 +3,12 @@
     <button class="index__button" @click="showPopup">Показать аккордионы</button>
     <Overlay :shown="overlayShown" @overlayClick="hidePopup"/>
     <PopUp :opened="popupOpened">
-      Popup content
+      <Accordition :heading="'Первый'">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nesciunt beatae similique quod quas nemo, voluptatem culpa nobis in. Odio neque consequuntur placeat voluptate repudiandae eligendi itaque corporis in ab.</p>
+      </Accordition>
+      <Accordition :heading="'Второй'">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nesciunt beatae similique quod quas nemo, voluptatem culpa nobis in. Odio neque consequuntur placeat voluptate repudiandae eligendi itaque corporis in ab.</p>
+      </Accordition>
     </PopUp>
   </div>
 </template>
