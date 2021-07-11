@@ -1,0 +1,164 @@
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page__section {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+  padding: 0 48px;
+}
+
+.logo {
+  max-width: 60px;
+}
+
+.menu__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu__item {
+  margin-right: 20px;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__item-link {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.banner {
+  background-image: url(https://img.huffingtonpost.com/asset/5cd374aa2100005800d3b8df.jpeg?ops=1778_1000);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .banner__overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.banner::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* .banner__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.banner__title {
+  z-index: 1;
+}
+
+.title {
+  font-size: 80px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.title_theme_light {
+  color: white;
+}
+
+.section-title {
+  font-size: 60px;
+  margin: 0;
+}
+
+.cards {
+  padding-top: 100px;
+}
+
+.cards__title {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.cards__list {
+  /* display: flex;
+  flex-wrap: wrap;
+  list-style: none; */
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
+  gap: 20px;
+}
+
+.cards__list-item {
+  /* margin-right: 20px;
+  margin-bottom: 20px; */
+  /* margin: 0 10px 20px; */
+}
+
+.card {
+  /* width: 400px; */
+  border: 2px solid black;
+  padding-bottom: 20px;
+  border-radius: 6px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card__image {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  object-position: center;
+  margin-bottom: 40px;
+}
+
+.card__title {
+  margin: 0 20px 20px;
+}
+
+.card__weight {
+  margin: 0 20px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+  padding: 0 48px;
+}
