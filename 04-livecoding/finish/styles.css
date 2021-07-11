@@ -1,0 +1,184 @@
+body, html {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+
+}
+
+.page__section {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.page__section_bottom_space {
+  margin-bottom: 100px;
+}
+
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+}
+
+.header {
+  padding: 0 48px;
+}
+
+.menu {
+
+}
+
+.logo {
+  max-width: 60px;
+}
+
+.menu__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu__item {
+  margin-right: 20px;
+}
+
+.menu__item:last-child {
+  margin-right: 0px;
+}
+
+.menu__item-link {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+
+
+
+/* ---- sections ----- */
+
+.banner {
+  background-image: url('https://img.huffingtonpost.com/asset/5cd374aa2100005800d3b8df.jpeg?ops=1778_1000');
+  background-position: 50%;
+  background-size: cover;
+  min-height: 500px;
+  position: relative;
+}
+
+.banner__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  background-color: rgba(0,0,0,.6);
+}
+
+
+/* title */
+
+.title {
+  font-size: 80px;
+  text-transform: uppercase;
+}
+
+.title_theme_light {
+  color: #FFF;
+}
+
+
+
+/* cards-list */
+.cards__list {
+  list-style: none;
+/*  display: flex;
+  flex-wrap: wrap;*/
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
+}
+
+.cards__list-item {
+
+
+}
+
+/* card */
+
+.card {
+  /*max-width: 400px;*/
+  border: 2px solid #979797;
+  border-radius: 6px;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card__image {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  margin-bottom: 40px;
+}
+
+.card__title {
+  margin: 0 20px 20px;
+}
+
+.card__weight {
+  margin: 0 20px;
+}
+
+
+/* section-title */
+.section-title {
+  margin: 0;
+  text-align: center;
+  font-size: 60px;
+}
+
+
+/* cards */
+
+.cards {
+  padding-top: 100px;
+}
+
+.cards__title {
+  margin-bottom: 60px;
+}
+
+/* */
+
+.footer__content {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+
+.footer__content {
+  padding: 0 48px;
+  min-height: 80px;
+}
