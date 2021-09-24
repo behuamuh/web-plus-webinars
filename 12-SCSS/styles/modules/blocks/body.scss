@@ -1,0 +1,38 @@
+.body {
+  background-color: $primaryColor;
+  color: $secondaryColor;
+  font-family: $fontFamily;
+
+  @include flex($align: center, $justify: center);
+  flex-direction: column;
+
+  @include desktopStyles {
+    font-size: 20px;
+  }
+
+  &__square {
+    @include wh(150px);
+    background-color: red;
+  }
+
+  &__circle {
+    @include wh($w: 150px, $r: 50%);
+    background-color: green;
+  }
+
+  &__title {
+    &::after {
+      content: "!!!";
+    }
+
+    &_size {
+      &_large {
+        font-size: 40px;
+      }
+
+      &_small {
+        font-size: 16px;
+      }
+    }
+  }
+}

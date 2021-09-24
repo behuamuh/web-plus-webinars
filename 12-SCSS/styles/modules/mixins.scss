@@ -1,0 +1,20 @@
+@mixin flex($align: stretch, $justify: flex-start) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin wh($w, $h: $w, $r: 0) {
+  width: $w;
+  height: $h;
+
+  @if $r != 0 {
+    border-radius: $r;
+  }
+}
+
+@mixin desktopStyles {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}

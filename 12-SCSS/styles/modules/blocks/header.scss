@@ -1,0 +1,9 @@
+.header {
+  &__logo {
+
+  }
+
+  &:after {
+    content: "";
+  }
+}
