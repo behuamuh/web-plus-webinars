@@ -10,6 +10,22 @@
   margin-bottom: 20px;
 }
 
+.link2 {
+  display: inline-block;
+  border: 1px solid red;
+  padding: 12px 30px;
+  color: black;
+  background: linear-gradient(to right, blue 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background 400ms ease-in-out, color 400ms 100ms ease-in-out;
+}
+
+.link2:hover {
+  background-position: left bottom;
+  color: white;
+}
+
 .link {
   display: inline-block;
   position: relative;
@@ -21,7 +37,7 @@
 }
 
 .link::before {
-  content: '';
+  content: "";
   background-color: cadetblue;
   position: absolute;
   top: 0;
@@ -34,7 +50,7 @@
 }
 
 .link::after {
-  content: '';
+  content: "";
   position: absolute;
   background-image: url(https://png.pngtree.com/png-vector/20190419/ourmid/pngtree-vector-right-arrow-icon-png-image_956430.jpg);
   background-size: cover;
