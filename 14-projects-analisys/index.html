@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- slider -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- slider -->
+
+  <!-- scrollbar -->
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <!-- scrollbar -->
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="page">
+  <header class="header">
+    <nav>
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <a href="#">Home</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">About</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">Contacts</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">Other</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="sticky">
+    <div class="sticky__item"></div>
+  </section>
+  <section class="scroll">
+    <div class="scroll__item"></div>
+    <div class="scroll__item"></div>
+    <div class="scroll__item"></div>
+    <div class="scroll__item"></div>
+    <div class="scroll__item"></div>
+    <div class="scroll__item"></div>
+  </section>
+  <section class="gallery">
+    <div class="gallery__slider">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <img class="swiper-slide" src="https://via.placeholder.com/550">
+          <img class="swiper-slide" src="https://via.placeholder.com/550">
+          <img class="swiper-slide" src="https://via.placeholder.com/550">
+          <img class="swiper-slide" src="https://via.placeholder.com/550">
+          ...
+        </div>
+      </div>
+      <div class="gallery__slider-footer">
+        <h3>Галерея</h3>
+        <ul class="gallery__navs">
+          <li class="swiper__button-prev">
+            &larr;
+          </li>
+          <li class="swiper__button-next">
+            &rarr;
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="gallery__placeholder"></div>
+
+  </section>
+  <script src="./script.js"></script>
+</body>
+
+</html>
