@@ -3,4 +3,6 @@
 @import url('../blocks/form/__title/form__title.css');
 @import url('../blocks/form/__label/form__label.css');
 @import url('../blocks/form/__input/form__input.css');
+@import url('../blocks/form/__input/_error/form__input_error.css');
+@import url('../blocks/form/__input-error/form__input-error.css');
 @import url('../blocks/form/__submit-button/form__submit-button.css');
