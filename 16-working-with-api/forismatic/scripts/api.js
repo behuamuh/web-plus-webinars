@@ -4,3 +4,14 @@
 const PROXY_API = 'http://localhost:8080/';
 
 const FORISMATIC_API = `${PROXY_API}https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=ru`;
+
+const checkResponse = res => {
+  if (res.ok) return res.json();
+
+  return Promise.reject(`Ошибка: ${res.status}`);
+}
+
+export const getRandomQuote = () => {
+  return fetch(FORISMATIC_API)
+    .then(checkResponse);
+};

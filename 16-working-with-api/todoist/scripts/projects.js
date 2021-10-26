@@ -1,4 +1,6 @@
+import { getUserProjects } from './api.js';
 import { loadProjectTasks } from "./tasks.js";
+import { showError } from './utils.js';
 
 const projectsContainer = document.querySelector(".projects");
 const projectsTemplate = document.querySelector("#projects-template");
@@ -36,44 +38,13 @@ const renderProjects = (projects) => {
   projectsContainer.replaceChildren(createProjectsElement(projects));
 };
 
-const projects = [
-  {
-    "id": 377276382,
-    "color": 48,
-    "name": "Проект 1",
-    "comment_count": 0,
-    "shared": false,
-    "favorite": false,
-    "sync_id": 0,
-    "inbox_project": true,
-    "url": "https://todoist.com/showProject?id=377276382"
-  },
-  {
-    "id": 270013839,
-    "order": 1,
-    "color": 48,
-    "name": "Проект 2",
-    "comment_count": 0,
-    "shared": false,
-    "favorite": false,
-    "sync_id": 0,
-    "url": "https://todoist.com/showProject?id=270013839"
-  },
-  {
-    "id": 270034943,
-    "order": 2,
-    "color": 48,
-    "name": "Проект 3",
-    "comment_count": 0,
-    "shared": false,
-    "favorite": false,
-    "sync_id": 0,
-    "url": "https://todoist.com/showProject?id=270034943"
-  }
-];
-
-
 export const loadProjects = () => {
-  renderProjects(projects)
-  setActiveProject(projects[0].id);
+  getUserProjects()
+    .then(projects => {
+      renderProjects(projects)
+      setActiveProject(projects[0].id);
+    })
+    .catch(err => {
+      showError(projectsContainer, `Ошибка при загрузке проектов: ${err}`);
+    })
 };
