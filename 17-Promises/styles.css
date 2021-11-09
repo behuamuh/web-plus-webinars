@@ -9,7 +9,7 @@
 
 .player_running {
   margin-left: calc(100% + 5px);
-  transition: margin-left .3s;
+  transition: margin-left 1.3s;
 }
 
 .race {
