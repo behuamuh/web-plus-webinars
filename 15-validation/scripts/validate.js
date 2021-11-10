@@ -52,10 +52,10 @@ const setEventListeners = formElement => {
   });
 
   // find all inputs
-  const inputList = Array.from(document.querySelectorAll(config.inputSelector));
+  const inputList = Array.from(formElement.querySelectorAll(config.inputSelector));
 
   // find submit button
-  const submitButton = document.querySelector(config.buttonSelector);
+  const submitButton = formElement.querySelector(config.buttonSelector);
 
   inputList.forEach(inputElement => {
     // add listeners for each input
