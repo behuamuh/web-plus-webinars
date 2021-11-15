@@ -3,7 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "da": "^0.0.3",
+    "dayjs": "^1.10.7",
+    "swiper": "^7.2.0",
+    "validate.js": "^0.13.1"
   }
 }
