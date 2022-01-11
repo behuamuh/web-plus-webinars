@@ -1,24 +1,16 @@
 import { useState } from 'react';
 
-import BoilingVerdict from './BoilingVerdict';
 
 const scaleNames = {
   c: 'Celsius',
   f: 'Fahrenheit'
 };
 
-const TemperatureInput = ({ scale }) => {
-  const [temperature, setTemperature] = useState('');
-
-  const handleChange = e => {
-    setTemperature(e.target.value);
-  };
-
+const TemperatureInput = ({ scale, temperature, onChange }) => {
   return (
     <fieldset>
       <legend>Enter temperature in {scaleNames[scale]}:</legend>
-      <input value={temperature} onChange={handleChange} />
-      <BoilingVerdict celsius={temperature} />
+      <input value={temperature} onChange={onChange} />
     </fieldset>
   );
 };
