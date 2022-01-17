@@ -9,20 +9,16 @@
 </head>
 <body>
   <form class="create">
-    <input type="text" class="create__input">
+    <input name="todo" type="text" class="create__input">
     <button class="create__btn">Create</button>
   </form>
   <ul class="list">
-    <li class="list__item">
-      <div class="todo">
-        text 1
-      </div>
-    </li>
-    <li class="list__item">
-      <div class="todo todo_done">
-        text 2
-      </div>
-    </li>
   </ul>
+  <template id="todo-item">
+    <li class="list__item">
+      <div class="todo"></div>
+    </li>
+  </template>
+  <script src="./script.js"></script>
 </body>
 </html>
