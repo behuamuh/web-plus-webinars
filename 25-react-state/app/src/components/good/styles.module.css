@@ -1,0 +1,32 @@
+.good {
+  max-width: 100%;
+  text-align: left;
+  background: #FFF;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.title {
+  margin-top: 0px;
+}
+
+.description {
+  margin-top: 0px;
+  min-height: 108px;
+}
+
+.price {
+  margin-top: 0px;
+}
+
+.image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.content {
+  min-height: 200px;
+  padding: 20px;
+}
