@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { memo, useContext } from 'react'
 import styles from './styles.module.css'
 import Button from '../button'
+import { CartItemsContext } from '../../contexts/cartItems'
 
 const Good = ({ title, imgSrc, description, price }) => {
+  const setCartItems = useContext(CartItemsContext);
+
+  console.log('good');
+
+  const handleBuy = () => {
+    setCartItems(old => old + 1);
+  };
+
   return <li className={styles.good}>
     <img className={styles.image} alt={title} src={imgSrc} />
     <div className={styles.content}>
@@ -13,10 +22,10 @@ const Good = ({ title, imgSrc, description, price }) => {
       <p className={styles.price}>
         <strong>Price:</strong> {price}
       </p>
-      <Button>Buy</Button>
+      <Button onClick={handleBuy}>Buy</Button>
     </div>
   </li>
 }
 
 
-export default Good
+export default memo(Good)

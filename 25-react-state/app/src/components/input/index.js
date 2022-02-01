@@ -1,15 +1,14 @@
 import React from 'react'
 import styles from './styles.module.css'
 
-const Input = ({ value = '', type = 'text', onChange, placeholder }) => {
+const Input = ({ value = '', type = 'text', name, onChange, placeholder }) => {
   return <input
     className={styles.input}
     value={value}
     type={type}
     placeholder={placeholder}
-    onChange={e => {
-      onChange && onChange(e.target.value)
-    }}
+    onChange={onChange}
+    name={name}
   />
 }
 

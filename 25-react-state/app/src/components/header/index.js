@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { UserContext } from '../../contexts/user'
 import styles from './styles.module.css'
 
-const Header = () => {
+const Header = ({ cartItems }) => {
+  const user = useContext(UserContext);
+
   return <header className={styles.header}>
     <h1 className={styles.title}>The greatest store of all times</h1>
     <div className={styles.userInfo}>
-      <span className={styles.userName}>Рене Декарт</span>
-      <img src='https://biographe.ru/wp-content/uploads/2019/11/3423324324-350x350.png' className={styles.userImage} alt='Рене Декарт' />
+      <span className={styles.userName}>{user.name}</span>
+      <img src={user.imageSrc} className={styles.userImage} alt='Рене Декарт' />
       <div className={styles.cart}>
-        Cart Items: 0
+        Cart Items: {cartItems}
       </div>
     </div>
   </header>
